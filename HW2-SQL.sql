@@ -1,7 +1,6 @@
 
 
---1.Создать таблицуó employees
->>>>>>> SQL
+--1.Создать таблицу employees
 -- - id serial,  primary key,
 -- - employee_name. Varchar(50), not null
 create table employees(
@@ -118,20 +117,12 @@ create table employee_salary(
 	id serial primary key,
 	employee_id int not null unique,
 	salary_id int not null
-	--foreign key (salary_id)
-		--references salary(id),
-	--foreign key (employee_id)
-		--references employees(id)
 );
 select * from employee_salary;
---drop table employee_salary;
 
 --6. Наполнить таблицу employee_salary 40 строками:
-<<<<<<< HEAD
 -- - в 10 строк из 40 вставить несуществующие employee_id
-=======
 -- - - в 10 строк из 40 вставить несуществующие employee_id
->>>>>>> SQL
 insert into employee_salary(employee_id,salary_id)
 values (1,15),
        (2,1),
@@ -185,7 +176,7 @@ select * from roles;
 
 --8.Поменять тип столба role_name с int на varchar(30)
 alter table roles 
-alter column role_name type varchar(40) using role_name::varchar(40);
+alter column role_name type varchar(30) using role_name::varchar(30);
 
 --9.Наполнить таблицу roles 20 строками
 insert into roles (role_name)
@@ -227,7 +218,7 @@ select * from roles_employee;
 
 --11.Наполнить таблицу roles_employee 40 строками
 insert into roles_employee (employee_id,role_id)
-values (1,1),
+values     (1,1),
 	   (2,3),
 	   (3,5),
 	   (4,2),
