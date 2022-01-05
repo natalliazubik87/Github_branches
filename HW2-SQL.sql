@@ -1,8 +1,11 @@
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 
 =======
 >>>>>>> SQL
+=======
+>>>>>>> 01ea9d0a34de5cf241a403f068aadba7b4cfa34a
 --1.Создать таблицу employees
 -- - id serial,  primary key,
 -- - employee_name. Varchar(50), not null
